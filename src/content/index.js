@@ -1,6 +1,6 @@
 export default {
   nav: {
-    logo: "CC",
+    logo: "PORTFOLIO",
     links: [
       { text: "Work", to: "mywork" },
       { text: "Contact", to: "mycontact" },
