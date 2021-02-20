@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {},
     animation: {
-      float: "float 3s infinite",
+      bounce: "bounce 1s infinite",
+      pulse:
+        "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
     },
   },
   variants: {

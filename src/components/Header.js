@@ -1,18 +1,9 @@
 import React from "react";
+import ReactFloaterJs from "react-floaterjs";
 import Typical from "react-typical";
-import { bounce } from "react-animations";
-import Radium, { StyleRoot } from "radium";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import content from "../content";
-
-const styles = {
-  bounce: {
-    animation: "x 1s",
-    animationName: Radium.keyframes(bounce, "bounce"),
-    loop: Infinity,
-  },
-};
 
 export default function Header() {
   return (
@@ -44,14 +35,13 @@ export default function Header() {
                 className="inline-block"
               />
             </h1>
-            <StyleRoot>
+            <ReactFloaterJs>
               <button
                 className="bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg"
-                style={styles.bounce}
               >
                 {content.header.btnText}
               </button>
-            </StyleRoot>
+            </ReactFloaterJs>
           </div>
         </div>
       </div>
